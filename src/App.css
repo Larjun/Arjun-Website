@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100;200;300&family=Montserrat:wght@100;200;300;400&family=Roboto:wght@300;400;500&display=swap');
+@font-face {
+  font-family: "Raster";
+  src: local("Raster"),
+  url("fonts/raster.ttf") format("truetype");
+}
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.App{
+  display: grid;
+}
+
+h1 {
+  font-family: Montserrat, sans-serif;
+  font-weight: 100px;
+  font-size: 60px;
+  color: #fff;
+}
+
+#arjunHeader {
+  font-size: 100px;
+}
+
+h2 {
+  font-family: Raster, Montserrat, sans-serif;
+  font-weight: 200px;
+  font-size: 45px;
+  color: #fff;
+}
+
+h2 {
+  font-family: Raster, Montserrat, sans-serif;
+  font-weight: 200px;
+  font-size: 45px;
+  color: #fff;
+}
+
+h3 {
+  font-family: Montserrat, sans-serif;
+  font-weight: 300px;
+  font-size: 27px;
+  color: #fff;
+  text-align: center;
+}
+h4 {
+  font-family: IBM Plex Mono, monospace;
+  font-weight: 100px;
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+}
+
+p {
+  font-size: 20px;
+  color: white;
+  font-family: Roboto, sans-serif;
+  text-align: justify;
+}
+
+#nameHeader {
+  padding-top: 250px;
+  padding-bottom: 250px;
+  margin-top: 0;
+}
+
+
+#namePanel {
+  /*background-color: #e5e5f7;
+  opacity: 0.8;
+  background-image:  linear-gradient(30deg, #444cf7 12%, transparent 12.5%, transparent 87%, #444cf7 87.5%, #444cf7), linear-gradient(150deg, #444cf7 12%, transparent 12.5%, transparent 87%, #444cf7 87.5%, #444cf7), linear-gradient(30deg, #444cf7 12%, transparent 12.5%, transparent 87%, #444cf7 87.5%, #444cf7), linear-gradient(150deg, #444cf7 12%, transparent 12.5%, transparent 87%, #444cf7 87.5%, #444cf7), linear-gradient(60deg, #444cf777 25%, transparent 25.5%, transparent 75%, #444cf777 75%, #444cf777), linear-gradient(60deg, #444cf777 25%, transparent 25.5%, transparent 75%, #444cf777 75%, #444cf777);
+  background-size: 20px 35px;
+  background-position: 0 0, 0 0, 10px 18px, 10px 18px, 0 0, 10px 18px;*/
+  background-image: linear-gradient(to bottom, #00ffc4 20%, #0b005d);
+  text-align: center;
+}
+
+#displayimg {
+  width: 70%;
+  border: 2px solid #000;
+  border-radius: 1000px;
+  vertical-align: middle;
+}
+
+.centerCont {
+  display: flex;
+  justify-content: center;
+}
+
+.whoI {
+  padding-top: 40px;
+  margin-bottom: 50px;
+}
+
+#whoAmI {
+  background-image: linear-gradient(to bottom, #0b005d, #000 40%);
+  padding: 10px 200px;
+}
+
+.headerLink {
+  padding: 0px 30px;
+  font-size: 75;
+  color: white;
+}
+
+.headerLink:hover {
+  color: #dcdcdc;
+}
+
+#iconsOfHeader {
+  padding-top: 50px;
+}
+
+.whoIContent {
+  padding: 0px 10px 30px 10px;
+}
+
+.infoPanel {
+  background-color: #000;
+  padding: 10px 200px;
+}
+
+.technologiesList {
+  color: #fff;
+  font-family: Roboto;
+  font-size: 20px;
+}
+
+.listP {
+  margin: 0;
+}
+
+.arrowIcon {
+  color: #fff;
+}
+
+.experienceCard {
+  background-color: #171717;
+  margin: 20px auto;
+}
+
+.cardContent {
+  background-color: #171717;
+}
