@@ -1,4 +1,5 @@
 import logo from './logo.svg';
+import { useEffect } from 'react';
 import { Container} from '@mui/system'
 import { Box, Grid, Link, List, ListItem, ListItemIcon, ListItemText, Card, CardActionArea, CardContent, CardMedia, Button} from '@mui/material'
 import DescriptionIcon from '@mui/icons-material/Description';
@@ -11,6 +12,10 @@ import CUG from './images/cug.jpeg';
 import CUR from './images/cur.png';
 
 function App() {
+  useEffect(() => {
+    document.title = 'Arjun Lakshmi Narasimhan';
+  }, []);
+
   return (
     <div className="App">
       <Container maxWidth={false} id="namePanel">
