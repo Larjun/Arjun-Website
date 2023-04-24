@@ -156,7 +156,7 @@ header {
   align-items: center;
   justify-content: space-between;
   height: 80px;
-  padding: 5px 2rem;
+  padding: 5px 1rem;
   background-color: #00ffc4;
   color: #171717; 
   position: sticky;
@@ -166,7 +166,6 @@ header {
 nav {
   margin: 0 auto;
   text-align: center;
-  height: 100%;
 }
 
 nav a  {
@@ -222,7 +221,7 @@ header .nav-btn {
 @media screen and (max-width: 1000px) {
   nav a {
     font-size: 10px;
-    margin: 0 5px;
+    margin: 0 10px;
   }
 }
 
