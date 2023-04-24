@@ -219,6 +219,12 @@ header .nav-btn {
 
 }
 
+@media screen and (max-width: 1000px) {
+  nav a {
+    font-size: 10px;
+  }
+}
+
 header {
   height: 100%;
 }
