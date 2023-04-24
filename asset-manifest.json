@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Arjun-Website/static/css/main.efd0b775.css",
-    "main.js": "/Arjun-Website/static/js/main.aec4fb05.js",
+    "main.css": "/Arjun-Website/static/css/main.6c5d0be8.css",
+    "main.js": "/Arjun-Website/static/js/main.2cc83d54.js",
     "static/js/787.5809834d.chunk.js": "/Arjun-Website/static/js/787.5809834d.chunk.js",
     "static/media/profilepic.jpg": "/Arjun-Website/static/media/profilepic.feea01d9d76ec852aca9.jpg",
     "static/media/roboto-all-500-normal.woff": "/Arjun-Website/static/media/roboto-all-500-normal.0ab669b7a0d19b178f57.woff",
@@ -41,12 +41,12 @@
     "static/media/roboto-greek-ext-300-normal.woff2": "/Arjun-Website/static/media/roboto-greek-ext-300-normal.35b9d6be04b95f0f0530.woff2",
     "static/media/roboto-greek-ext-700-normal.woff2": "/Arjun-Website/static/media/roboto-greek-ext-700-normal.bd9854c751441ccc1a70.woff2",
     "index.html": "/Arjun-Website/index.html",
-    "main.efd0b775.css.map": "/Arjun-Website/static/css/main.efd0b775.css.map",
-    "main.aec4fb05.js.map": "/Arjun-Website/static/js/main.aec4fb05.js.map",
+    "main.6c5d0be8.css.map": "/Arjun-Website/static/css/main.6c5d0be8.css.map",
+    "main.2cc83d54.js.map": "/Arjun-Website/static/js/main.2cc83d54.js.map",
     "787.5809834d.chunk.js.map": "/Arjun-Website/static/js/787.5809834d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.efd0b775.css",
-    "static/js/main.aec4fb05.js"
+    "static/css/main.6c5d0be8.css",
+    "static/js/main.2cc83d54.js"
   ]
 }
