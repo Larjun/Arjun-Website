@@ -51,9 +51,11 @@ function App() {
           <a href="#experiences">Experiences</a>
           <a href="#projects">Projects</a>
           <a href="#extracurricular">Extracurricular</a>
+          {/*(
           <button className='nav-btn nav-close-btn' onClick={showNavbar}>
             <CloseIcon />
           </button>
+          )*/}
         </nav>
         <button className='nav-btn' onClick={showNavbar}>
           <MenuIcon />
