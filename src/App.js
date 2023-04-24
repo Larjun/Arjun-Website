@@ -45,9 +45,6 @@ function App() {
       </Particles>
 
       <header>
-        <button className='nav-btn' onClick={showNavbar}>
-          <MenuIcon />
-        </button>
         <nav ref={navRef}>
           <a href="#whoAmI">About Me</a>
           <a href="#technologies">Technologies</a>
@@ -58,6 +55,9 @@ function App() {
             <CloseIcon />
           </button>
         </nav>
+        <button className='nav-btn' onClick={showNavbar}>
+          <MenuIcon />
+        </button>
       </header>
       
       <Container maxWidth={false} id="namePanel">
