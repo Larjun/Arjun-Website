@@ -95,7 +95,7 @@ function App() {
       
       
 
-      <Container maxWidth={false} class="infoPanel" id="technologies">
+      <Container maxWidth={"lg"} class="infoPanel" id="technologies">
         <Container class="centerCont whoI">
           <h2>What I Can Do</h2>
         </Container>
@@ -160,7 +160,7 @@ function App() {
         </Grid>
       </Container>
 
-      <Container maxWidth={false} class="infoPanel" id="experiences">
+      <Container maxWidth={"lg"} class="infoPanel" id="experiences">
         <Container class="centerCont whoI">
           <h2>What I Worked For</h2>
         </Container>
@@ -202,7 +202,7 @@ function App() {
         </Grid>
       </Container>
       
-      <Container maxWidth={false} class="infoPanel" id="projects">
+      <Container maxWidth={"lg"} class="infoPanel" id="projects">
         <Container class="centerCont whoI">
           <h2>What I Made</h2>
         </Container>
@@ -279,7 +279,7 @@ function App() {
         </Grid>
       </Container>
       
-      <Container maxWidth={false} class="infoPanel" id="extracurricular">
+      <Container maxWidth={"lg"} class="infoPanel" id="extracurricular">
         <Container class="centerCont whoI">
           <h2>What I Do When I Am Free</h2>
         </Container>
@@ -311,7 +311,7 @@ function App() {
         </Grid>
       </Container>
 
-      <Container maxWidth={false} id="foot">
+      <Container maxWidth={"lg"} id="foot">
         <h3></h3>
       </Container>
       
