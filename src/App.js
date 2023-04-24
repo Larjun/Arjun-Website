@@ -77,7 +77,7 @@ function App() {
         <Container class="centerCont whoI">
             <h2>Who Am I?</h2>
         </Container>
-        <Grid container spacing={10}>
+        <Grid container spacing={0}>
           <Grid xs={12} md={4}>
             <Container class="centerCont whoI"><img src={ProfilePhoto} id='displayimg'></img></Container>
           </Grid>
