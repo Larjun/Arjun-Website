@@ -50,7 +50,7 @@ function App() {
           <a href="#technologies">Technologies</a>
           <a href="#experiences">Experiences</a>
           <a href="#projects">Projects</a>
-          <a href="#extracurricular">Extracurricular</a>
+          <a href="#extracurricular">Hobbies</a>
           {/*(
           <button className='nav-btn nav-close-btn' onClick={showNavbar}>
             <CloseIcon />
@@ -283,7 +283,7 @@ function App() {
       
       <Container maxWidth={"lg"} class="infoPanel" id="extracurricular">
         <Container class="centerCont whoI">
-          <h2>What I Do When I Am Free</h2>
+          <h2>What I Do When I'm Free</h2>
         </Container>
         <Grid container spacing={0}>
           <Grid xs={12} md={6}>
