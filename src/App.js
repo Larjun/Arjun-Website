@@ -283,7 +283,7 @@ function App() {
       
       <Container maxWidth={"lg"} class="infoPanel" id="extracurricular">
         <Container class="centerCont whoI">
-          <h2>What I Do When I'm Free</h2>
+          <h2>What I Like To Do</h2>
         </Container>
         <Grid container spacing={0}>
           <Grid xs={12} md={6}>
