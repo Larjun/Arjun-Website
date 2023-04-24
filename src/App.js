@@ -43,7 +43,7 @@ function App() {
       
       <Particles id='tsparticles' init={particlesInit} loaded={particlesLoaded} options={particleConfig}>
       </Particles>
-      {/*(
+      {/*()*/}
       <header>
         <nav ref={navRef}>
           <a href="#whoAmI">About Me</a>
@@ -59,7 +59,7 @@ function App() {
           <MenuIcon />
         </button>
       </header>
-      )*/}
+      
       <Container maxWidth={false} id="namePanel">
         <h1 id='nameHeader'>
           <span id='arjunHeader'>Arjun</span>
