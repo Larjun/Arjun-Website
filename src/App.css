@@ -191,7 +191,7 @@ header .nav-btn {
   opacity: 0;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 5000px) {
   header .nav-btn {
     visibility: visible;
     opacity: 1;
