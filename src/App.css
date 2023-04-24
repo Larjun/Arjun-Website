@@ -221,8 +221,8 @@ header .nav-btn {
 
 @media screen and (max-width: 1000px) {
   nav a {
-    font-size: 12px;
-    margin: 0 10px;
+    font-size: 10px;
+    margin: 0 5px;
   }
 }
 
