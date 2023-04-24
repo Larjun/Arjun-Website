@@ -199,7 +199,7 @@ header .nav-btn {
 
   header nav {
     position: fixed;
-    top: 100px;
+    top: 0;
     left: 0;
     height: 100%;
     width: 100%;
@@ -210,11 +210,11 @@ header .nav-btn {
     gap: 1.5rem;
     background-color: #00ffc4;
     transition: 1s;
-    transform: translateY(-100vh);
+    
   }
 
   header .responsive_nav {
-    transform: none;
+    transform: translateY(-100vh);;
   }
 }
 
