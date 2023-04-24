@@ -45,6 +45,9 @@ function App() {
       </Particles>
 
       <header>
+        <button className='nav-btn' onClick={showNavbar}>
+          <MenuIcon />
+        </button>
         <nav ref={navRef}>
           <a href="#whoAmI">About Me</a>
           <a href="#technologies">Technologies</a>
@@ -55,9 +58,6 @@ function App() {
             <CloseIcon />
           </button>
         </nav>
-        <button className='nav-btn' onClick={showNavbar}>
-          <MenuIcon />
-        </button>
       </header>
       
       <Container maxWidth={false} id="namePanel">
@@ -99,10 +99,10 @@ function App() {
         <Container class="centerCont whoI">
           <h2>What I Can Do</h2>
         </Container>
-        <Grid container spacing={4}>
+        <Grid container spacing={0}>
           <Grid xs={12} md={4}>
-            <h3>Programming Languages</h3>
-            <List dense={true} className="technologiesList">
+            <h3>Progamming Languages</h3>
+            <List dense={true} class="technologiesList">
               <ListItem><ListItemIcon><PlayArrowIcon className='arrowIcon'/></ListItemIcon><ListItemText>
                 <p className='listP'>C</p>
               </ListItemText></ListItem>
@@ -111,6 +111,9 @@ function App() {
               </ListItemText></ListItem>
               <ListItem><ListItemIcon><PlayArrowIcon className='arrowIcon'/></ListItemIcon><ListItemText>
                 <p className='listP'>Python</p>
+              </ListItemText></ListItem>
+              <ListItem><ListItemIcon><PlayArrowIcon className='arrowIcon'/></ListItemIcon><ListItemText>
+                <p className='listP'>TensorFlow</p>
               </ListItemText></ListItem>
               <ListItem><ListItemIcon><PlayArrowIcon className='arrowIcon'/></ListItemIcon><ListItemText>
                 <p className='listP'>Java</p>
