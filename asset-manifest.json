@@ -1,15 +1,16 @@
 {
   "files": {
     "main.css": "/Arjun-Website/static/css/main.6c5d0be8.css",
-    "main.js": "/Arjun-Website/static/js/main.2cc83d54.js",
+    "main.js": "/Arjun-Website/static/js/main.e45dc138.js",
     "static/js/787.5809834d.chunk.js": "/Arjun-Website/static/js/787.5809834d.chunk.js",
     "static/media/profilepic.jpg": "/Arjun-Website/static/media/profilepic.feea01d9d76ec852aca9.jpg",
+    "static/media/car.jpg": "/Arjun-Website/static/media/car.cfb1828260574b8ea8bc.jpg",
+    "static/media/hike.jpg": "/Arjun-Website/static/media/hike.b316ed5e96b33feabf81.jpg",
     "static/media/roboto-all-500-normal.woff": "/Arjun-Website/static/media/roboto-all-500-normal.0ab669b7a0d19b178f57.woff",
     "static/media/roboto-all-700-normal.woff": "/Arjun-Website/static/media/roboto-all-700-normal.a457fde362a540fcadff.woff",
     "static/media/roboto-all-400-normal.woff": "/Arjun-Website/static/media/roboto-all-400-normal.c5d001fa922fa66a147f.woff",
     "static/media/roboto-all-300-normal.woff": "/Arjun-Website/static/media/roboto-all-300-normal.168d6383e73339293ac3.woff",
     "static/media/raster.ttf": "/Arjun-Website/static/media/raster.575519f2774896cef50c.ttf",
-    "static/media/cur.png": "/Arjun-Website/static/media/cur.b61e7080ba5014a0adc3.png",
     "static/media/roboto-latin-500-normal.woff2": "/Arjun-Website/static/media/roboto-latin-500-normal.f25d774ecfe0996f8eb5.woff2",
     "static/media/roboto-latin-700-normal.woff2": "/Arjun-Website/static/media/roboto-latin-700-normal.227c93190fe7f82de3f8.woff2",
     "static/media/roboto-latin-400-normal.woff2": "/Arjun-Website/static/media/roboto-latin-400-normal.b009a76ad6afe4ebd301.woff2",
@@ -18,11 +19,12 @@
     "static/media/roboto-cyrillic-ext-300-normal.woff2": "/Arjun-Website/static/media/roboto-cyrillic-ext-300-normal.4777461b144e55145268.woff2",
     "static/media/roboto-cyrillic-ext-500-normal.woff2": "/Arjun-Website/static/media/roboto-cyrillic-ext-500-normal.62ced72e5832f02c2796.woff2",
     "static/media/roboto-cyrillic-ext-700-normal.woff2": "/Arjun-Website/static/media/roboto-cyrillic-ext-700-normal.be4d02458ce53887dc37.woff2",
-    "static/media/cug.jpeg": "/Arjun-Website/static/media/cug.388dcaab2beee1eb3edc.jpeg",
+    "static/media/cug.jpg": "/Arjun-Website/static/media/cug.8353946e968d3e5f8251.jpg",
     "static/media/roboto-latin-ext-400-normal.woff2": "/Arjun-Website/static/media/roboto-latin-ext-400-normal.861b791f9de857a6e7bc.woff2",
     "static/media/roboto-latin-ext-700-normal.woff2": "/Arjun-Website/static/media/roboto-latin-ext-700-normal.ed67ad54b1a8f5d21150.woff2",
     "static/media/roboto-latin-ext-500-normal.woff2": "/Arjun-Website/static/media/roboto-latin-ext-500-normal.9165081d10e1ba601384.woff2",
     "static/media/roboto-latin-ext-300-normal.woff2": "/Arjun-Website/static/media/roboto-latin-ext-300-normal.dc7dcec8e3f654e0ed63.woff2",
+    "static/media/cur.jpg": "/Arjun-Website/static/media/cur.ab1138524aec14dac66c.jpg",
     "static/media/roboto-cyrillic-500-normal.woff2": "/Arjun-Website/static/media/roboto-cyrillic-500-normal.cad7d3d9cb265e334e58.woff2",
     "static/media/roboto-cyrillic-700-normal.woff2": "/Arjun-Website/static/media/roboto-cyrillic-700-normal.d010f1f324e111a22e53.woff2",
     "static/media/roboto-cyrillic-400-normal.woff2": "/Arjun-Website/static/media/roboto-cyrillic-400-normal.71a33b6b50457b2c903a.woff2",
@@ -42,11 +44,11 @@
     "static/media/roboto-greek-ext-700-normal.woff2": "/Arjun-Website/static/media/roboto-greek-ext-700-normal.bd9854c751441ccc1a70.woff2",
     "index.html": "/Arjun-Website/index.html",
     "main.6c5d0be8.css.map": "/Arjun-Website/static/css/main.6c5d0be8.css.map",
-    "main.2cc83d54.js.map": "/Arjun-Website/static/js/main.2cc83d54.js.map",
+    "main.e45dc138.js.map": "/Arjun-Website/static/js/main.e45dc138.js.map",
     "787.5809834d.chunk.js.map": "/Arjun-Website/static/js/787.5809834d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6c5d0be8.css",
-    "static/js/main.2cc83d54.js"
+    "static/js/main.e45dc138.js"
   ]
 }
