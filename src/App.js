@@ -10,8 +10,6 @@ import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 import './App.css';
 import ProfilePhoto from './images/profilepic.jpg';
-import CUG from './images/cug.jpeg';
-import CUR from './images/cur.png';
 import Particles from "react-tsparticles";
 import particleConfig from './particle_config.js';
 import { loadFull } from "tsparticles";
