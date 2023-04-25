@@ -171,7 +171,7 @@ function App() {
             <Card sx={{ maxWidth: "90%" }} className='experienceCard'>
               <CardMedia
                 sx={{ height: 140 }}
-                image={require("./images/cur.png")}
+                image={require("./images/cur.jpg")}
                 title="CU Gaming Logo"
               />
               <CardContent className='cardContent'>
@@ -188,7 +188,7 @@ function App() {
             <Card sx={{ maxWidth: "90%" }} className='experienceCard'>
               <CardMedia
                 sx={{ height: 140 }}
-                image={require("./images/cug.jpeg")}
+                image={require("./images/cug.jpg")}
                 title="CU Gaming Logo"
               />
               <CardContent className='cardContent'>
@@ -288,24 +288,34 @@ function App() {
         <Grid container spacing={0}>
           <Grid xs={12} md={6}>
             <Card sx={{ maxWidth: "90%" }} className='experienceCard'>
+              <CardMedia
+                sx={{ height: 140 }}
+                image={require("./images/car.jpg")}
+                title="Sim racing car sude by side"
+              />
               <CardContent className='cardContent'>
                 <h3>
                   Simracing & Motorsport
                 </h3>
                 <p>
-                  I am a huge fan of Motorsport growing up. I also am a avid simracer who participate in regular league and eudurance races that can go on for several hours with my team. I am a sucker for fast things and the engineering that goes into building fast race cars intrigues me. I am also a livery designer for my simracing team and I practice my graphics design skills by building custom wraps for my cars. In fact, the wrap of the car in the card is made by me.
+                  I am a huge fan of Motorsport growing up. I also am a avid simracer who participate in regular league and eudurance races that can go on for several hours with my team. I am a sucker for fast things and the engineering that goes into building fast race cars intrigues me. I am also a livery designer for my simracing team and I practice my graphics design skills by building custom wraps for my cars. In fact, the wrap for the Mercedes in the card is made by me.
                 </p>
               </CardContent>
             </Card>
           </Grid>
           <Grid xs={12} md={6}>
             <Card sx={{ maxWidth: "90%" }} className='experienceCard'>
+              <CardMedia
+                sx={{ height: 140 }}
+                image={require("./images/hike.jpg")}
+                title="Me at a peak of a hike"
+              />
               <CardContent className='cardContent'>
                 <h3>
-                  Music Production
+                  Hiking and Outdoors
                 </h3>
                 <p>
-                  I have been making music in my spare time for a few years. I use an audio software to write and produce full length songs. I love this activity as it shows a part of my artisic side and my love for creating.
+                  Ever since I moved to Colorado to pursue my ungraduate and graduate degree I fell in love with the out doors. I love exploring the mountains and soaking the view from the top of a cliff or a summit. My desire to push myself past my limit forces me to go on longer and higher hikes every time till I reach my milestone of summit a fourteener. 
                 </p>
               </CardContent>
             </Card>
