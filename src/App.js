@@ -322,7 +322,7 @@ function App() {
       </Container>
 
       <Container maxWidth={"lg"} id="foot">
-        <h3></h3>
+        <h5>Handcrafted using React with Material UI Framework</h5>
       </Container>
       
     </div>
