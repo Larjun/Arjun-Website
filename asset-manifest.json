@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Arjun-Website/static/css/main.6c5d0be8.css",
-    "main.js": "/Arjun-Website/static/js/main.e45dc138.js",
+    "main.css": "/Arjun-Website/static/css/main.a4db22f3.css",
+    "main.js": "/Arjun-Website/static/js/main.db053f7c.js",
     "static/js/787.5809834d.chunk.js": "/Arjun-Website/static/js/787.5809834d.chunk.js",
     "static/media/profilepic.jpg": "/Arjun-Website/static/media/profilepic.feea01d9d76ec852aca9.jpg",
     "static/media/car.jpg": "/Arjun-Website/static/media/car.cfb1828260574b8ea8bc.jpg",
@@ -43,12 +43,12 @@
     "static/media/roboto-greek-ext-300-normal.woff2": "/Arjun-Website/static/media/roboto-greek-ext-300-normal.35b9d6be04b95f0f0530.woff2",
     "static/media/roboto-greek-ext-700-normal.woff2": "/Arjun-Website/static/media/roboto-greek-ext-700-normal.bd9854c751441ccc1a70.woff2",
     "index.html": "/Arjun-Website/index.html",
-    "main.6c5d0be8.css.map": "/Arjun-Website/static/css/main.6c5d0be8.css.map",
-    "main.e45dc138.js.map": "/Arjun-Website/static/js/main.e45dc138.js.map",
+    "main.a4db22f3.css.map": "/Arjun-Website/static/css/main.a4db22f3.css.map",
+    "main.db053f7c.js.map": "/Arjun-Website/static/js/main.db053f7c.js.map",
     "787.5809834d.chunk.js.map": "/Arjun-Website/static/js/787.5809834d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6c5d0be8.css",
-    "static/js/main.e45dc138.js"
+    "static/css/main.a4db22f3.css",
+    "static/js/main.db053f7c.js"
   ]
 }
