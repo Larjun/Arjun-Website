@@ -69,7 +69,7 @@ function App() {
           <div id='iconsOfHeader'>
             <Link href='https://github.com/Larjun' color="inherit" class="headerLink"><GitHubIcon fontSize='inherit' color='inherit'/></Link>
             <Link href='https://www.linkedin.com/in/arjun-lakshmi-narasimhan-5626b01b8/' color="inherit"  class="headerLink"><LinkedInIcon fontSize='inherit' color='inherit'/></Link>
-            <Link href='https://drive.google.com/file/d/1IQEdKDV0n5Xx8CPm4uU05CYJDavkk4jq/view?usp=sharing' color="inherit"  class="headerLink"><DescriptionIcon fontSize='inherit' color='inherit'/></Link>
+            <Link href='https://drive.google.com/file/d/1Xr5HikFYurES9f7B91jRa0RMJ8e_C8sB/view?usp=sharing' color="inherit"  class="headerLink"><DescriptionIcon fontSize='inherit' color='inherit'/></Link>
           </div>
         </h1>
       </Container>
@@ -77,16 +77,19 @@ function App() {
         <Container class="centerCont whoI">
             <h2>Who Am I?</h2>
         </Container>
-        <Grid container spacing={0}>
-          <Grid xs={12} md={4}>
+        <Grid container spacing={0} className='InfoGrid'>
+          <Grid xs={12} md={5}>
             <Container class="centerCont whoI"><img src={ProfilePhoto} id='displayimg'></img></Container>
           </Grid>
-          <Grid xs={12} md={8}>
+          <Grid xs={12} md={7}>
             <Container class="centerCont whoIContent">
               <p>
-                Hi, I am Arjun Lakshmi Narasimhan. I am a student University of Colorado Boulder pursuing a Bachelor's and Master's in Computer Science in the Data Science sub-track. I love creating. My passion for computer science lies in Full Stack Development. I take great pride in building websites and applications and improving my craft for designing and building apps on both the front end and back end. I also geek out on AI and Machine Learning technology and I am intrigued by the capabilities of computers in managing big data and intelligence systems. I am someone who loves to learn, every task and project I take on is one that I will learn from. I feel great satisfaction from refining my skills and abilities as well as learning new and upcoming technologies. I also enjoy putting my skills to the test and pushing my limits to see what I am capable of doing. 
+                Hi, I am Arjun Lakshmi Narasimhan. I am a student at University of Colorado Boulder pursuing a Bachelor and Master in Computer Science in the Data Science sub-track though. I specialize in Full Stack Software and Web Developement, Data Science,Machine Learning and Computer Vision. I am driven to learn, improve and put my skill to the tet. I love exercising my creativity in the softwares I build. Every thing  
+                
+                {//I love creating. My passion for computer science lies in Full Stack Development. I take great pride in building websites and applications and improving my craft for designing and building apps on both the front end and back end. I also geek out on AI and Machine Learning technology and I am intrigued by the capabilities of computers in managing big data and intelligence systems. I am someone who loves to learn, every task and project I take on is one that I will learn from. I feel great satisfaction from refining my skills and abilities as well as learning new and upcoming technologies. I also enjoy putting my skills to the test and pushing my limits to see what I am capable of doing.
+}
                 <br></br><br></br>
-                Thank You for taking the time to learn about me. I look forward to connecting with you and learning about the opportunity to improve and push myself further.
+                Thank You for taking the time to learn about me. I look forward to connecting with you and learning about your oppurtunites.
               </p>
             </Container>
           </Grid>
@@ -99,7 +102,7 @@ function App() {
         <Container class="centerCont whoI">
           <h2>What I Can Do</h2>
         </Container>
-        <Grid container spacing={0}>
+        <Grid container spacing={0} className='InfoGrid'>
           <Grid xs={12} md={4}>
             <h3>Progamming Languages</h3>
             <List dense={true} class="technologiesList">
@@ -162,9 +165,9 @@ function App() {
 
       <Container maxWidth={"lg"} class="infoPanel" id="experiences">
         <Container class="centerCont whoI">
-          <h2>What I Worked For</h2>
+          <h2>What Experiences I Had</h2>
         </Container>
-        <Grid container spacing={0}>
+        <Grid container spacing={0} className='InfoGrid'>
           <Grid xs={12} md={6}>
             <Card sx={{ maxWidth: "90%" }} className='experienceCard'>
               <CardMedia
@@ -206,7 +209,7 @@ function App() {
         <Container class="centerCont whoI">
           <h2>What I Made</h2>
         </Container>
-        <Grid container spacing={1} rowSpacing={1}>
+        <Grid container spacing={1} rowSpacing={1} className='InfoGrid'>
           <Grid xs={12} md={4}>
             <Card sx={{ maxWidth: "90%" }} className='experienceCard'>
               <CardContent className='cardContent'>
@@ -283,7 +286,7 @@ function App() {
         <Container class="centerCont whoI">
           <h2>What I Like To Do</h2>
         </Container>
-        <Grid container spacing={0}>
+        <Grid container spacing={0} className='InfoGrid'>
           <Grid xs={12} md={6}>
             <Card sx={{ maxWidth: "90%" }} className='experienceCard'>
               <CardMedia
