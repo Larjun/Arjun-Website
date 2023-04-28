@@ -84,7 +84,7 @@ function App() {
           <Grid xs={12} md={7}>
             <Container class="centerCont whoIContent">
               <p>
-                Hi, I am Arjun Lakshmi Narasimhan. I am a student at University of Colorado Boulder pursuing a Bachelor and Master in Computer Science in the Data Science sub-track though. I specialize in Full Stack Software and Web Developement, Data Science,Machine Learning and Computer Vision. I am driven to learn, improve and put my skill to the tet. I love exercising my creativity in the softwares I build. Every thing  
+                Hi, I am Arjun Lakshmi Narasimhan. I am a student at University of Colorado Boulder pursuing a Bachelor and Master in Computer Science in the Data Science sub-track though. I specialize in Full Stack Software and Web Developement, Data Science,Machine Learning and Computer Vision. I am driven to learn, improve and put my skill to the tet. I also love exercising my creativity in the softwares I build.   
                 
                 {//I love creating. My passion for computer science lies in Full Stack Development. I take great pride in building websites and applications and improving my craft for designing and building apps on both the front end and back end. I also geek out on AI and Machine Learning technology and I am intrigued by the capabilities of computers in managing big data and intelligence systems. I am someone who loves to learn, every task and project I take on is one that I will learn from. I feel great satisfaction from refining my skills and abilities as well as learning new and upcoming technologies. I also enjoy putting my skills to the test and pushing my limits to see what I am capable of doing.
 }
@@ -316,7 +316,7 @@ function App() {
                   Hiking and Outdoors
                 </h3>
                 <p>
-                  Ever since I moved to Colorado to pursue my ungraduate and graduate degree I fell in love with the out doors. I love exploring the mountains and soaking the view from the top of a cliff or a summit. My desire to push myself past my limit forces me to go on longer and higher hikes every time till I reach my milestone of summit a fourteener. 
+                  Ever since I moved to Colorado, I fell in love with the outdoors. I love exploring the mountains and enjoy nature's beauty. I love pushing past my limits. I am no stranger to exhausting hikes tests my endurance. One day I will reach my goal of summiting a fourteener.
                 </p>
               </CardContent>
             </Card>
