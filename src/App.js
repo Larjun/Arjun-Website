@@ -41,7 +41,7 @@ function App() {
       
       <Particles id='tsparticles' init={particlesInit} loaded={particlesLoaded} options={particleConfig}>
       </Particles>
-      {/*()*/}
+      {/*( )*/}
       <header>
         <nav ref={navRef}>
           <a href="#technologies">Technologies</a>
