@@ -44,7 +44,6 @@ function App() {
       {/*()*/}
       <header>
         <nav ref={navRef}>
-          <a href="#whoAmI">About Me</a>
           <a href="#technologies">Technologies</a>
           <a href="#experiences">Experiences</a>
           <a href="#projects">Projects</a>
