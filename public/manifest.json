@@ -1,21 +1,21 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Arjun Lakshmi Narasimhan",
+  "name": "Arjun Lakshmi Narasimhan",
   "icons": [
     {
       "src": "favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
+      "sizes": "72x72",
       "type": "image/x-icon"
     },
     {
-      "src": "logo192.png",
-      "type": "image/png",
-      "sizes": "192x192"
+      "src": "me.jpg",
+      "type": "image/jpg",
+      "sizes": "72x72"
     },
     {
-      "src": "logo512.png",
+      "src": "me.png",
       "type": "image/png",
-      "sizes": "512x512"
+      "sizes": "936×1178"
     }
   ],
   "start_url": ".",

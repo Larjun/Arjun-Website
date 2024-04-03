@@ -1,18 +1,62 @@
-import logo from './logo.svg';
+import { useEffect, useRef } from 'react';
 import { Container} from '@mui/system'
-import { Box, Grid, Link, List, ListItem, ListItemIcon, ListItemText, Card, CardActionArea, CardContent, CardMedia, Button} from '@mui/material'
+import { Grid, Link, List, ListItem, ListItemIcon, ListItemText, Card, CardContent, CardMedia } from '@mui/material'
 import DescriptionIcon from '@mui/icons-material/Description';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import PlayArrowIcon from '@mui/icons-material/PlayArrow';
+import MenuIcon from '@mui/icons-material/Menu';
 import './App.css';
 import ProfilePhoto from './images/profilepic.jpg';
-import CUG from './images/cug.jpeg';
-import CUR from './images/cur.png';
+import Particles from "react-tsparticles";
+import particleConfig from './particle_config.js';
+import { loadFull } from "tsparticles";
+
 
 function App() {
+  useEffect(() => {
+    document.title = 'Arjun Lakshmi Narasimhan';
+  }, []);
+
+  const navRef = useRef()
+  const showNavbar = () => {
+    navRef.current.classList.toggle('responsive_nav')
+  }
+  const particlesInit = async engine => {
+    console.log(engine);
+    // you can initiate the tsParticles instance (engine) here, adding custom shapes or presets
+    // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
+    // starting from v2 you can add only the features you need reducing the bundle size
+    await loadFull(engine);
+  };
+
+  const particlesLoaded = container => {
+    console.log(container);
+  };
+  
   return (
     <div className="App">
+      
+      <Particles id='tsparticles' init={particlesInit} loaded={particlesLoaded} options={particleConfig}>
+      </Particles>
+      {/*( )*/}
+      <header>
+        <nav ref={navRef}>
+          <a href="#technologies">Technologies</a>
+          <a href="#experiences">Experiences</a>
+          <a href="#projects">Projects</a>
+          <a href="#extracurricular">Hobbies</a>
+          {/*(
+          <button className='nav-btn nav-close-btn' onClick={showNavbar}>
+            <CloseIcon />
+          </button>
+          )*/}
+        </nav>
+        <button className='nav-btn' onClick={showNavbar}>
+          <MenuIcon />
+        </button>
+      </header>
+      
       <Container maxWidth={false} id="namePanel">
         <h1 id='nameHeader'>
           <span id='arjunHeader'>Arjun</span>
@@ -22,41 +66,43 @@ function App() {
           <div id='iconsOfHeader'>
             <Link href='https://github.com/Larjun' color="inherit" class="headerLink"><GitHubIcon fontSize='inherit' color='inherit'/></Link>
             <Link href='https://www.linkedin.com/in/arjun-lakshmi-narasimhan-5626b01b8/' color="inherit"  class="headerLink"><LinkedInIcon fontSize='inherit' color='inherit'/></Link>
-            <Link href='https://drive.google.com/file/d/1IQEdKDV0n5Xx8CPm4uU05CYJDavkk4jq/view?usp=sharing' color="inherit"  class="headerLink"><DescriptionIcon fontSize='inherit' color='inherit'/></Link>
+            <Link href='https://docs.google.com/document/d/10tVN2y9JXOtEkxp-enNvhXcAlNF5aaNVAll04jmlZ2c/edit?usp=sharing' color="inherit"  class="headerLink"><DescriptionIcon fontSize='inherit' color='inherit'/></Link>
           </div>
         </h1>
       </Container>
-
       <Container maxWidth={false} id="whoAmI">
         <Container class="centerCont whoI">
             <h2>Who Am I?</h2>
         </Container>
-        <Grid container spacing={10}>
+        <Grid container spacing={0} className='InfoGrid'>
           <Grid xs={12} md={5}>
-            <Container class="centerCont whoI"><img src={ProfilePhoto} id='displayimg'></img></Container>
+            <Container class="centerCont whoI"><img src={ProfilePhoto} id='displayimg' alt='profile pic'></img></Container>
           </Grid>
           <Grid xs={12} md={7}>
             <Container class="centerCont whoIContent">
               <p>
-                Hi, I am Arjun Lakshmi Narasimhan. I am a student University of Colorado Boulder pursuing a Bachelor's and Master's in Computer Science in the Data Science sub-track. I love creating. My passion for computer science lies in Full Stack Development. I take great pride in building websites and applications and improving my craft for designing and building apps on both the front end and back end. I also geek out on AI and Machine Learning technology and I am intrigued by the capabilities of computers in managing big data and intelligence systems. I am someone who loves to learn, every task and project I take on is one that I will learn from. I feel great satisfaction from refining my skills and abilities as well as learning new and upcoming technologies. I also enjoy putting my skills to the test and pushing my limits to see what I am capable of doing. 
+                Hi, I am Arjun Lakshmi Narasimhan. I am a student at University of Colorado Boulder pursuing a Bachelor and Master in Computer Science in the Data Science sub-track though. I specialize in Full Stack Software and Web Developement, Data Science, Machine Learning and Computer Vision. I am driven to learn, improve and put my skill to the test. I also love exercising my creativity in all my projects and products I build.   
+                
+                {//I love creating. My passion for computer science lies in Full Stack Development. I take great pride in building websites and applications and improving my craft for designing and building apps on both the front end and back end. I also geek out on AI and Machine Learning technology and I am intrigued by the capabilities of computers in managing big data and intelligence systems. I am someone who loves to learn, every task and project I take on is one that I will learn from. I feel great satisfaction from refining my skills and abilities as well as learning new and upcoming technologies. I also enjoy putting my skills to the test and pushing my limits to see what I am capable of doing.
+}
                 <br></br><br></br>
-                In my spare time, I am into Motorsport, Gaming, and putting both together - Simracing. I am the community manager at CU Gaming and Esports and I design and commission virtual liveries and car wraps in my simracing games. One of my favorite projects I worked on is a web app where several drivers can upload liveries that they created and my app would compress multiple liveries and form a livery pack for people to download. I also enjoy the outdoors, I love bicycling and hiking.
-                <br></br><br></br>
-                Thank You for taking the time to learn about me. I look forward to connecting with you and learning about the opportunity to improve and push myself further.
+                Thank You for taking the time to learn about me. I look forward to connecting with you and learning about your oppurtunites.
               </p>
             </Container>
           </Grid>
         </Grid>
       </Container>
+      
+      
 
-      <Container maxWidth={false} class="infoPanel" id="technologies">
+      <Container maxWidth={"lg"} class="infoPanel" id="technologies">
         <Container class="centerCont whoI">
           <h2>What I Can Do</h2>
         </Container>
-        <Grid container spacing={4}>
+        <Grid container spacing={0} className='InfoGrid'>
           <Grid xs={12} md={4}>
-            <h3>Programming Languages</h3>
-            <List dense={true} disablePadding={true} className="technologiesList">
+            <h3>Progamming Languages</h3>
+            <List dense={true} class="technologiesList">
               <ListItem><ListItemIcon><PlayArrowIcon className='arrowIcon'/></ListItemIcon><ListItemText>
                 <p className='listP'>C</p>
               </ListItemText></ListItem>
@@ -67,10 +113,16 @@ function App() {
                 <p className='listP'>Python</p>
               </ListItemText></ListItem>
               <ListItem><ListItemIcon><PlayArrowIcon className='arrowIcon'/></ListItemIcon><ListItemText>
+                <p className='listP'>TensorFlow</p>
+              </ListItemText></ListItem>
+              <ListItem><ListItemIcon><PlayArrowIcon className='arrowIcon'/></ListItemIcon><ListItemText>
                 <p className='listP'>Java</p>
               </ListItemText></ListItem>
               <ListItem><ListItemIcon><PlayArrowIcon className='arrowIcon'/></ListItemIcon><ListItemText>
                 <p className='listP'>Javascript</p>
+              </ListItemText></ListItem>
+              <ListItem><ListItemIcon><PlayArrowIcon className='arrowIcon'/></ListItemIcon><ListItemText>
+                <p className='listP'>Swift</p>
               </ListItemText></ListItem>
             </List>
           </Grid> 
@@ -111,16 +163,33 @@ function App() {
         </Grid>
       </Container>
 
-      <Container maxWidth={false} class="infoPanel" id="experiences">
+      <Container maxWidth={"lg"} class="infoPanel" id="experiences">
         <Container class="centerCont whoI">
-          <h2>What I Worked For</h2>
+          <h2>What Experiences I Had</h2>
         </Container>
-        <Grid container spacing={0}>
+        <Grid container spacing={0} className='InfoGrid'>
+          <Grid xs={12} md={12}>
+            <Card sx={{ maxWidth: "95%" }} className='experienceCard'>
+              <CardMedia
+                image={require("./images/svhc.JPG")}
+                title="CU Gaming Logo"
+                sx={{ height: 140, objectFit: "contain" }}
+              />
+              <CardContent className='cardContent'>
+                <h3>
+                  Sri Vari Hot Chips
+                </h3>
+                <p>
+                  I built a website for a local bakery and snacks shop back home in Chennai, India. This is a full stack webapp built using React, NodeJS, Express and MongoDB. The website is hosted on AWS and is used to display the bakery's menu, take orders and manage inventory. Customers can also order food online and have it delivered to their homes as well as customize food orders to their specific needs. I am working closely with the owner to add and implement features that suites the requirements and abilities of a small business.
+                </p>
+              </CardContent>
+            </Card>
+          </Grid>
           <Grid xs={12} md={6}>
             <Card sx={{ maxWidth: "90%" }} className='experienceCard'>
               <CardMedia
                 sx={{ height: 140 }}
-                image={require("./images/cur.png")}
+                image={require("./images/cur.jpg")}
                 title="CU Gaming Logo"
               />
               <CardContent className='cardContent'>
@@ -128,7 +197,7 @@ function App() {
                   CU Robotics
                 </h3>
                 <p>
-                  Cat ipsum dolor sit amet, i is not fat, i is fluffy cry louder at reflection always ensure to lay down in such a manner that tail can lightly brush human's nose or stare at ceiling light. This cat happen now, it was too purr-fect!!! attack the child. Dismember a mouse and then regurgitate parts of it on the family room floor. Spot something, big eyes, big eyes, crouch, shake butt, prepare to pounce throwup on your pillow, or groom yourself 4 hours - checked, have your beauty sleep 18 hours - checked, be fabulous for the rest of the day - checked.
+                  I was the control systems developer for CU Robotics. I designed and built the way the robots move and fire their rounds. The control system is primarily built from teensyarduino, an arduino framework made to support the teensy microcontroller. 
                 </p>
               </CardContent>
             </Card>
@@ -137,7 +206,7 @@ function App() {
             <Card sx={{ maxWidth: "90%" }} className='experienceCard'>
               <CardMedia
                 sx={{ height: 140 }}
-                image={require("./images/cug.jpeg")}
+                image={require("./images/cug.jpg")}
                 title="CU Gaming Logo"
               />
               <CardContent className='cardContent'>
@@ -145,7 +214,7 @@ function App() {
                   CU Gaming & Esports
                 </h3>
                 <p>
-                  Cat ipsum dolor sit amet, i is not fat, i is fluffy cry louder at reflection always ensure to lay down in such a manner that tail can lightly brush human's nose or stare at ceiling light. This cat happen now, it was too purr-fect!!! attack the child. Dismember a mouse and then regurgitate parts of it on the family room floor. Spot something, big eyes, big eyes, crouch, shake butt, prepare to pounce throwup on your pillow, or groom yourself 4 hours - checked, have your beauty sleep 18 hours - checked, be fabulous for the rest of the day - checked.
+                  I am the community manager for CU Gaming and Esports. I manage public relations with the community as well as host huge events that support up to a 1000 people and frequent small scale community events. 
                 </p>
               </CardContent>
             </Card>
@@ -153,17 +222,17 @@ function App() {
         </Grid>
       </Container>
       
-      <Container maxWidth={false} class="infoPanel" id="projects">
+      <Container maxWidth={"lg"} class="infoPanel" id="projects">
         <Container class="centerCont whoI">
           <h2>What I Made</h2>
         </Container>
-        <Grid container spacing={1} rowSpacing={1}>
+        <Grid container spacing={1} rowSpacing={1} className='InfoGrid'>
           <Grid xs={12} md={4}>
             <Card sx={{ maxWidth: "90%" }} className='experienceCard'>
               <CardContent className='cardContent'>
                 <h3>Expedia Senior Capstone Project</h3>
                 <h4>Lead Frontend Developer</h4>
-                <p>Description</p>
+                <p>Built using React, MongoDB, NodeJS and Express and hosted on AWS. This white collared webapp serves as a method for renters to communicate with the property managers of vation rentals</p>
               </CardContent>
             </Card>
           </Grid>
@@ -171,9 +240,18 @@ function App() {
           <Grid xs={12} md={4}>
             <Card sx={{ maxWidth: "90%" }} className='experienceCard'>
               <CardContent className='cardContent'>
+                <h3>Swift Wildfire & Weather App</h3>
+                <h4>Developer</h4>
+                <p>Built using Swift. This app uses weather api data to display forcast as wild fire predictions predicted using complex models built using Tensorflow.</p>
+              </CardContent>
+            </Card>
+          </Grid>
+          <Grid xs={12} md={4}>
+            <Card sx={{ maxWidth: "90%" }} className='experienceCard'>
+              <CardContent className='cardContent'>
                 <h3>ACC Livery App</h3>
                 <h4>Developer</h4>
-                <p>Description</p>
+                <p>Built using NodeJS, Express, Amazon S3 and hosted on AWS. This website made for users to upload custom liveries (car wraps) for the video game Assetto Corsa Competizione, create livery packs with several liveries and make these livery packs available to be downloaded</p>
               </CardContent>
             </Card>
           </Grid>
@@ -182,7 +260,7 @@ function App() {
               <CardContent className='cardContent'>
                 <h3>Destination Colorado</h3>
                 <h4>Project Lead</h4>
-                <p>Description</p>
+                <p>Built using NodeJS, Express and MongoDb. This website shows parks around Colorado which can be uploaded, rated and commented on by users.</p>
               </CardContent>
             </Card>
           </Grid>
@@ -191,7 +269,7 @@ function App() {
               <CardContent className='cardContent'>
                 <h3>A-mazing</h3>
                 <h4>Developer</h4>
-                <p>Description</p>
+                <p>Built using React. This project is a maze game with a randomly generated maze through whicht he user can navigate through. This project won the "Best UI/UX" award at HackCU 2023</p>
               </CardContent>
             </Card>
           </Grid>
@@ -199,8 +277,7 @@ function App() {
             <Card sx={{ maxWidth: "90%" }} className='experienceCard'>
               <CardContent className='cardContent'>
                 <h3>Advanced Spotify Search</h3>
-                <h4>Developer</h4>
-                <p>Description</p>
+                <p>Built using React and NodeJS. This webapp creates custom Spotify playlists based on track metadata such as "Energy", "Danceability", "Accousticness", etc.</p>
               </CardContent>
             </Card>
           </Grid>
@@ -208,8 +285,7 @@ function App() {
             <Card sx={{ maxWidth: "90%" }} className='experienceCard'>
               <CardContent className='cardContent'>
                 <h3>Free PDF Reader</h3>
-                <h4>Developer</h4>
-                <p>Description</p>
+                <p>Built using Express and NodeJS. This webapp converts PDF documents into audio file using Google Text To Speech.</p>
               </CardContent>
             </Card>
           </Grid>
@@ -217,17 +293,7 @@ function App() {
             <Card sx={{ maxWidth: "90%" }} className='experienceCard'>
               <CardContent className='cardContent'>
                 <h3>Colorify</h3>
-                <h4>Developer</h4>
-                <p>Description</p>
-              </CardContent>
-            </Card>
-          </Grid>
-          <Grid xs={12} md={4}>
-            <Card sx={{ maxWidth: "90%" }} className='experienceCard'>
-              <CardContent className='cardContent'>
-                <h3>Cyberhood</h3>
-                <h4>Developer</h4>
-                <p>Description</p>
+                <p>This is a chrome extension that improves the color contrast of every website, allowing users with visual impairment to have better access and readability of websites.</p>
               </CardContent>
             </Card>
           </Grid>
@@ -235,16 +301,57 @@ function App() {
             <Card sx={{ maxWidth: "90%" }} className='experienceCard'>
               <CardContent className='cardContent'>
                 <h3>Dungeon Deweller</h3>
-                <h4>Developer</h4>
-                <p>Description</p>
+                <p>Built using C++. This game is a dungeon crawler game played using the terminal. The player navigates through a dungeon with multiple levels, defeating enemies and reaching the exit.</p>
+              </CardContent>
+            </Card>
+          </Grid>
+        </Grid>
+      </Container>
+      
+      <Container maxWidth={"lg"} class="infoPanel" id="extracurricular">
+        <Container class="centerCont whoI">
+          <h2>What I Like To Do</h2>
+        </Container>
+        <Grid container spacing={0} className='InfoGrid'>
+          <Grid xs={12} md={6}>
+            <Card sx={{ maxWidth: "90%" }} className='experienceCard'>
+              <CardMedia
+                sx={{ height: 140 }}
+                image={require("./images/car.jpg")}
+                title="Sim racing car sude by side"
+              />
+              <CardContent className='cardContent'>
+                <h3>
+                  Simracing & Motorsport
+                </h3>
+                <p>
+                  I am a huge fan of Motorsport growing up. I also am a avid simracer who participate in regular league and eudurance races that can go on for several hours with my team. I am a sucker for fast things and the engineering that goes into building fast race cars intrigues me. I am also a livery designer for my simracing team and I practice my graphics design skills by building custom wraps for my cars. In fact, the wrap for the Mercedes in the card is made by me.
+                </p>
+              </CardContent>
+            </Card>
+          </Grid>
+          <Grid xs={12} md={6}>
+            <Card sx={{ maxWidth: "90%" }} className='experienceCard'>
+              <CardMedia
+                sx={{ height: 140 }}
+                image={require("./images/hike.jpg")}
+                title="Me at a peak of a hike"
+              />
+              <CardContent className='cardContent'>
+                <h3>
+                  Hiking and Outdoors
+                </h3>
+                <p>
+                  Ever since I moved to Colorado, I fell in love with the outdoors. I love exploring the mountains and enjoy nature's beauty. I love pushing past my limits. I am no stranger to exhausting hikes tests my endurance. One day I will reach my goal of summiting a fourteener.
+                </p>
               </CardContent>
             </Card>
           </Grid>
         </Grid>
       </Container>
 
-      <Container maxWidth={false} id="foot">
-        <h3></h3>
+      <Container maxWidth={"lg"} id="foot">
+        <h5>Handcrafted using React with Material UI Framework</h5>
       </Container>
       
     </div>
