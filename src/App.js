@@ -1,13 +1,11 @@
-import logo from './logo.svg';
-import { useEffect, useState, useRef, useCallback } from 'react';
+import { useEffect, useRef } from 'react';
 import { Container} from '@mui/system'
-import { Box, Grid, Link, List, ListItem, ListItemIcon, ListItemText, Card, CardActionArea, CardContent, CardMedia, Button, AppBar, Toolbar} from '@mui/material'
+import { Grid, Link, List, ListItem, ListItemIcon, ListItemText, Card, CardContent, CardMedia } from '@mui/material'
 import DescriptionIcon from '@mui/icons-material/Description';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import PlayArrowIcon from '@mui/icons-material/PlayArrow';
 import MenuIcon from '@mui/icons-material/Menu';
-import CloseIcon from '@mui/icons-material/Close';
 import './App.css';
 import ProfilePhoto from './images/profilepic.jpg';
 import Particles from "react-tsparticles";
@@ -68,7 +66,7 @@ function App() {
           <div id='iconsOfHeader'>
             <Link href='https://github.com/Larjun' color="inherit" class="headerLink"><GitHubIcon fontSize='inherit' color='inherit'/></Link>
             <Link href='https://www.linkedin.com/in/arjun-lakshmi-narasimhan-5626b01b8/' color="inherit"  class="headerLink"><LinkedInIcon fontSize='inherit' color='inherit'/></Link>
-            <Link href='https://drive.google.com/file/d/1Xr5HikFYurES9f7B91jRa0RMJ8e_C8sB/view?usp=sharing' color="inherit"  class="headerLink"><DescriptionIcon fontSize='inherit' color='inherit'/></Link>
+            <Link href='https://docs.google.com/document/d/10tVN2y9JXOtEkxp-enNvhXcAlNF5aaNVAll04jmlZ2c/edit?usp=sharing' color="inherit"  class="headerLink"><DescriptionIcon fontSize='inherit' color='inherit'/></Link>
           </div>
         </h1>
       </Container>
@@ -78,7 +76,7 @@ function App() {
         </Container>
         <Grid container spacing={0} className='InfoGrid'>
           <Grid xs={12} md={5}>
-            <Container class="centerCont whoI"><img src={ProfilePhoto} id='displayimg'></img></Container>
+            <Container class="centerCont whoI"><img src={ProfilePhoto} id='displayimg' alt='profile pic'></img></Container>
           </Grid>
           <Grid xs={12} md={7}>
             <Container class="centerCont whoIContent">
@@ -122,6 +120,9 @@ function App() {
               </ListItemText></ListItem>
               <ListItem><ListItemIcon><PlayArrowIcon className='arrowIcon'/></ListItemIcon><ListItemText>
                 <p className='listP'>Javascript</p>
+              </ListItemText></ListItem>
+              <ListItem><ListItemIcon><PlayArrowIcon className='arrowIcon'/></ListItemIcon><ListItemText>
+                <p className='listP'>Swift</p>
               </ListItemText></ListItem>
             </List>
           </Grid> 
@@ -167,6 +168,23 @@ function App() {
           <h2>What Experiences I Had</h2>
         </Container>
         <Grid container spacing={0} className='InfoGrid'>
+          <Grid xs={12} md={12}>
+            <Card sx={{ maxWidth: "95%" }} className='experienceCard'>
+              <CardMedia
+                image={require("./images/svhc.JPG")}
+                title="CU Gaming Logo"
+                sx={{ height: 140, objectFit: "contain" }}
+              />
+              <CardContent className='cardContent'>
+                <h3>
+                  Sri Vari Hot Chips
+                </h3>
+                <p>
+                  I built a website for a local bakery and snacks shop back home in Chennai, India. This is a full stack webapp built using React, NodeJS, Express and MongoDB. The website is hosted on AWS and is used to display the bakery's menu, take orders and manage inventory. Customers can also order food online and have it delivered to their homes as well as customize food orders to their specific needs. I am working closely with the owner to add and implement features that suites the requirements and abilities of a small business.
+                </p>
+              </CardContent>
+            </Card>
+          </Grid>
           <Grid xs={12} md={6}>
             <Card sx={{ maxWidth: "90%" }} className='experienceCard'>
               <CardMedia
@@ -219,6 +237,15 @@ function App() {
             </Card>
           </Grid>
           
+          <Grid xs={12} md={4}>
+            <Card sx={{ maxWidth: "90%" }} className='experienceCard'>
+              <CardContent className='cardContent'>
+                <h3>Swift Wildfire & Weather App</h3>
+                <h4>Developer</h4>
+                <p>Built using Swift. This app uses weather api data to display forcast as wild fire predictions predicted using complex models built using Tensorflow.</p>
+              </CardContent>
+            </Card>
+          </Grid>
           <Grid xs={12} md={4}>
             <Card sx={{ maxWidth: "90%" }} className='experienceCard'>
               <CardContent className='cardContent'>
