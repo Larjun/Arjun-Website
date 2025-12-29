@@ -68,3 +68,24 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+## TypeScript migration ⚙️
+
+This project was migrated from JavaScript to TypeScript (TSX) to improve type-safety and developer experience.
+
+What's changed:
+- Added `typescript` and type definitions (`@types/react`, `@types/react-dom`, `@types/node`, `@types/jest`) as devDependencies.
+- Added a `tsconfig.json` and started converting React components to `.tsx` and modules to `.ts`.
+- Updated tests and a small number of MUI usage patterns to remove prop warnings.
+
+Quick commands:
+
+- Install types: `npm install --save-dev typescript @types/react @types/react-dom @types/node @types/jest`
+- Run type-check: `npx tsc --noEmit`
+- Run tests: `npm test -- --watchAll=false`
+
+Notes:
+- The CRA toolchain auto-detects TypeScript when `.tsx` files are present.
+- If you see build-time warnings about TypeScript version compatibility with `react-scripts`, consider pinning TypeScript to a supported 4.x release (e.g., `npm install --save-dev typescript@4.9`).
+- If you add new asset types (images, fonts), add declarations in `src/custom.d.ts`.
+

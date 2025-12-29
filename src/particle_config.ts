@@ -1,4 +1,4 @@
-const particleConfig = {
+const particleConfig: any = {
     fps_limit: 60,
     interactivity: {
       detect_on: "canvas",

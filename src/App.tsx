@@ -9,28 +9,25 @@ import MenuIcon from '@mui/icons-material/Menu';
 import './App.css';
 import ProfilePhoto from './images/profilepic.jpg';
 import Particles from "react-tsparticles";
-import particleConfig from './particle_config.js';
+import particleConfig from './particle_config';
 import { loadFull } from "tsparticles";
 
-
-function App() {
+function App(): JSX.Element {
   useEffect(() => {
     document.title = 'Arjun Lakshmi Narasimhan';
   }, []);
 
-  const navRef = useRef()
+  const navRef = useRef<HTMLElement | null>(null);
   const showNavbar = () => {
-    navRef.current.classList.toggle('responsive_nav')
+    if (navRef.current) navRef.current.classList.toggle('responsive_nav')
   }
-  const particlesInit = async engine => {
+
+  const particlesInit = async (engine: any) => {
     console.log(engine);
-    // you can initiate the tsParticles instance (engine) here, adding custom shapes or presets
-    // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
-    // starting from v2 you can add only the features you need reducing the bundle size
     await loadFull(engine);
   };
 
-  const particlesLoaded = container => {
+  const particlesLoaded = async (container: any) => {
     console.log(container);
   };
   
@@ -46,11 +43,6 @@ function App() {
           <a href="#experiences">Experiences</a>
           <a href="#projects">Projects</a>
           <a href="#extracurricular">Hobbies</a>
-          {/*(
-          <button className='nav-btn nav-close-btn' onClick={showNavbar}>
-            <CloseIcon />
-          </button>
-          )*/}
         </nav>
         <button className='nav-btn' onClick={showNavbar}>
           <MenuIcon />
@@ -64,27 +56,25 @@ function App() {
           Lakshmi Narasimhan
           <br></br>
           <div id='iconsOfHeader'>
-            <Link href='https://github.com/Larjun' color="inherit" class="headerLink"><GitHubIcon fontSize='inherit' color='inherit'/></Link>
-            <Link href='https://www.linkedin.com/in/arjun-lakshmi-narasimhan-5626b01b8/' color="inherit"  class="headerLink"><LinkedInIcon fontSize='inherit' color='inherit'/></Link>
-            <Link href='https://docs.google.com/document/d/10tVN2y9JXOtEkxp-enNvhXcAlNF5aaNVAll04jmlZ2c/edit?usp=sharing' color="inherit"  class="headerLink"><DescriptionIcon fontSize='inherit' color='inherit'/></Link>
+            <Link href='https://github.com/Larjun' color="inherit" className="headerLink"><GitHubIcon fontSize='inherit' color='inherit'/></Link>
+            <Link href='https://www.linkedin.com/in/arjun-lakshmi-narasimhan-5626b01b8/' color="inherit"  className="headerLink"><LinkedInIcon fontSize='inherit' color='inherit'/></Link>
+            <Link href='https://docs.google.com/document/d/10tVN2y9JXOtEkxp-enNvhXcAlNF5aaNVAll04jmlZ2c/edit?usp=sharing' color="inherit"  className="headerLink"><DescriptionIcon fontSize='inherit' color='inherit'/></Link>
           </div>
         </h1>
       </Container>
+
       <Container maxWidth={false} id="whoAmI">
-        <Container class="centerCont whoI">
+        <Container className="centerCont whoI">
             <h2>Who Am I?</h2>
         </Container>
         <Grid container spacing={0} className='InfoGrid'>
-          <Grid xs={12} md={5}>
-            <Container class="centerCont whoI"><img src={ProfilePhoto} id='displayimg' alt='profile pic'></img></Container>
+          <Grid item xs={12} md={5}>
+            <Container className="centerCont whoI"><img src={ProfilePhoto} id='displayimg' alt='profile pic'></img></Container>
           </Grid>
-          <Grid xs={12} md={7}>
-            <Container class="centerCont whoIContent">
+          <Grid item xs={12} md={7}>
+            <Container className="centerCont whoIContent">
               <p>
                 Hi, I am Arjun Lakshmi Narasimhan. I recently graduate from with a Master's and Bacholor's degree in Computer Science in the Data Science sub-track from the University of Colorado, Boulder. I specialize in Full Stack Software and Web Developement, Data Science, Machine Learning and Computer Vision. I am driven to learn, improve and put my skill to the test. I also love exercising my creativity in all my projects and products I build.   
-                
-                {//I love creating. My passion for computer science lies in Full Stack Development. I take great pride in building websites and applications and improving my craft for designing and building apps on both the front end and back end. I also geek out on AI and Machine Learning technology and I am intrigued by the capabilities of computers in managing big data and intelligence systems. I am someone who loves to learn, every task and project I take on is one that I will learn from. I feel great satisfaction from refining my skills and abilities as well as learning new and upcoming technologies. I also enjoy putting my skills to the test and pushing my limits to see what I am capable of doing.
-}
                 <br></br><br></br>
                 Thank You for taking the time to learn about me. I look forward to connecting with you and learning about your oppurtunites.
               </p>
@@ -92,17 +82,15 @@ function App() {
           </Grid>
         </Grid>
       </Container>
-      
-      
 
-      <Container maxWidth={"lg"} class="infoPanel" id="technologies">
-        <Container class="centerCont whoI">
+      <Container maxWidth={"lg"} className="infoPanel" id="technologies">
+        <Container className="centerCont whoI">
           <h2>What I Can Do</h2>
         </Container>
         <Grid container spacing={0} className='InfoGrid'>
-          <Grid xs={12} md={4}>
+          <Grid item xs={12} md={4}>
             <h3>Progamming Languages</h3>
-            <List dense={true} class="technologiesList">
+            <List dense={true} className="technologiesList">
               <ListItem><ListItemIcon><PlayArrowIcon className='arrowIcon'/></ListItemIcon><ListItemText>
                 <p className='listP'>C</p>
               </ListItemText></ListItem>
@@ -129,9 +117,9 @@ function App() {
               </ListItemText></ListItem>
             </List>
           </Grid> 
-          <Grid xs={12} md={4}>
+          <Grid item xs={12} md={4}>
             <h3>Web & AI Technologies</h3>
-            <List dense={true} class="technologiesList">
+            <List dense={true} className="technologiesList">
               <ListItem><ListItemIcon><PlayArrowIcon className='arrowIcon'/></ListItemIcon><ListItemText>
                 <p className='listP'>Express</p>
               </ListItemText></ListItem>
@@ -149,9 +137,9 @@ function App() {
               </ListItemText></ListItem>
             </List>
           </Grid> 
-          <Grid xs={12} md={4}>
+          <Grid item xs={12} md={4}>
             <h3>Database Technologies</h3>
-            <List dense={true} class="technologiesList">
+            <List dense={true} className="technologiesList">
               <ListItem><ListItemIcon><PlayArrowIcon className='arrowIcon'/></ListItemIcon><ListItemText>
                 <p className='listP'>MongoDB</p>
               </ListItemText></ListItem>
@@ -171,13 +159,13 @@ function App() {
           </Grid> 
         </Grid>
       </Container>
-
-      <Container maxWidth={"lg"} class="infoPanel" id="experiences">
-        <Container class="centerCont whoI">
+      
+      <Container maxWidth={"lg"} className="infoPanel" id="experiences">
+        <Container className="centerCont whoI">
           <h2>What Experiences I Had</h2>
         </Container>
         <Grid container spacing={0} className='InfoGrid'>
-          <Grid xs={12} md={12}>
+          <Grid item xs={12} md={12}>
             <Card sx={{ maxWidth: "95%" }} className='experienceCard'>
               <CardMedia
                 image={require("./images/svhc.JPG")}
@@ -194,7 +182,7 @@ function App() {
               </CardContent>
             </Card>
           </Grid>
-          <Grid xs={12} md={6}>
+          <Grid item xs={12} md={6}>
             <Card sx={{ maxWidth: "90%" }} className='experienceCard'>
               <CardMedia
                 sx={{ height: 140 }}
@@ -211,7 +199,7 @@ function App() {
               </CardContent>
             </Card>
           </Grid>
-          <Grid xs={12} md={6}>
+          <Grid item xs={12} md={6}>
             <Card sx={{ maxWidth: "90%" }} className='experienceCard'>
               <CardMedia
                 sx={{ height: 140 }}
@@ -231,12 +219,12 @@ function App() {
         </Grid>
       </Container>
       
-      <Container maxWidth={"lg"} class="infoPanel" id="projects">
-        <Container class="centerCont whoI">
+      <Container maxWidth={"lg"} className="infoPanel" id="projects">
+        <Container className="centerCont whoI">
           <h2>What I Made</h2>
         </Container>
         <Grid container spacing={1} rowSpacing={1} className='InfoGrid'>
-          <Grid xs={12} md={4}>
+          <Grid item xs={12} md={4}>
             <Card sx={{ maxWidth: "90%" }} className='experienceCard'>
               <CardContent className='cardContent'>
                 <h3>Expedia Senior Capstone Project</h3>
@@ -246,7 +234,7 @@ function App() {
             </Card>
           </Grid>
           
-          <Grid xs={12} md={4}>
+          <Grid item xs={12} md={4}>
             <Card sx={{ maxWidth: "90%" }} className='experienceCard'>
               <CardContent className='cardContent'>
                 <h3>Swift Wildfire & Weather App</h3>
@@ -255,7 +243,7 @@ function App() {
               </CardContent>
             </Card>
           </Grid>
-          <Grid xs={12} md={4}>
+          <Grid item xs={12} md={4}>
             <Card sx={{ maxWidth: "90%" }} className='experienceCard'>
               <CardContent className='cardContent'>
                 <h3>ACC Livery App</h3>
@@ -264,7 +252,7 @@ function App() {
               </CardContent>
             </Card>
           </Grid>
-          <Grid xs={12} md={4}>
+          <Grid item xs={12} md={4}>
             <Card sx={{ maxWidth: "90%" }} className='experienceCard'>
               <CardContent className='cardContent'>
                 <h3>Destination Colorado</h3>
@@ -273,7 +261,7 @@ function App() {
               </CardContent>
             </Card>
           </Grid>
-          <Grid xs={12} md={4}>
+          <Grid item xs={12} md={4}>
             <Card sx={{ maxWidth: "90%" }} className='experienceCard'>
               <CardContent className='cardContent'>
                 <h3>A-mazing</h3>
@@ -282,7 +270,7 @@ function App() {
               </CardContent>
             </Card>
           </Grid>
-          <Grid xs={12} md={4}>
+          <Grid item xs={12} md={4}>
             <Card sx={{ maxWidth: "90%" }} className='experienceCard'>
               <CardContent className='cardContent'>
                 <h3>Advanced Spotify Search</h3>
@@ -290,7 +278,7 @@ function App() {
               </CardContent>
             </Card>
           </Grid>
-          <Grid xs={12} md={4}>
+          <Grid item xs={12} md={4}>
             <Card sx={{ maxWidth: "90%" }} className='experienceCard'>
               <CardContent className='cardContent'>
                 <h3>Free PDF Reader</h3>
@@ -298,7 +286,7 @@ function App() {
               </CardContent>
             </Card>
           </Grid>
-          <Grid xs={12} md={4}>
+          <Grid item xs={12} md={4}>
             <Card sx={{ maxWidth: "90%" }} className='experienceCard'>
               <CardContent className='cardContent'>
                 <h3>Colorify</h3>
@@ -306,7 +294,7 @@ function App() {
               </CardContent>
             </Card>
           </Grid>
-          <Grid xs={12} md={4}>
+          <Grid item xs={12} md={4}>
             <Card sx={{ maxWidth: "90%" }} className='experienceCard'>
               <CardContent className='cardContent'>
                 <h3>Dungeon Deweller</h3>
@@ -316,13 +304,13 @@ function App() {
           </Grid>
         </Grid>
       </Container>
-      
-      <Container maxWidth={"lg"} class="infoPanel" id="extracurricular">
-        <Container class="centerCont whoI">
+
+      <Container maxWidth={"lg"} className="infoPanel" id="extracurricular">
+        <Container className="centerCont whoI">
           <h2>What I Like To Do</h2>
         </Container>
         <Grid container spacing={0} className='InfoGrid'>
-          <Grid xs={12} md={6}>
+          <Grid item xs={12} md={6}>
             <Card sx={{ maxWidth: "90%" }} className='experienceCard'>
               <CardMedia
                 sx={{ height: 140 }}
@@ -339,7 +327,7 @@ function App() {
               </CardContent>
             </Card>
           </Grid>
-          <Grid xs={12} md={6}>
+          <Grid item xs={12} md={6}>
             <Card sx={{ maxWidth: "90%" }} className='experienceCard'>
               <CardMedia
                 sx={{ height: 140 }}
