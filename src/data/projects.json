@@ -1,0 +1,51 @@
+{
+    "projects": [
+        {
+            "title": "Expedia Senior Capstone Project",
+            "role": "Lead Frontend Developer",
+            "description": "Built using React, MongoDB, NodeJS and Express and hosted on AWS. This white collared webapp serves as a method for renters to communicate with the property managers of vation rentals",
+            "link": "https://www.linkedin.com/posts/arjun-lakshmi-narasimhan-5626b01b8_as-the-semester-draws-to-a-close-i-want-activity-7063704230884212736-5TDO?utm_source=share&utm_medium=member_desktop&rcm=ACoAADKmBhoBLmrbiyam1s-oe909EswR9LaheFM"
+
+        },
+        {
+            "title": "Swift Wildfire & Weather App",
+            "role": "Developer",
+            "description": "Built using Swift. This app uses weather api data to display forcast as wild fire predictions predicted using complex models built using Tensorflow.",
+            "link": "https://github.com/jwoody02/Big-Data-Final-Project"
+        },
+        {
+            "title": "ACC Livery App",
+            "role": "Developer",
+            "description": "Built using NodeJS, Express, Amazon S3 and hosted on AWS. This website made for users to upload custom liveries (car wraps) for the video game Assetto Corsa Competizione, create livery packs with several liveries and make these livery packs available to be downloaded"        },
+        {
+            "title": "Destination Colorado",
+            "role": "Project Lead",
+            "description": "Built using NodeJS, Express and MongoDb. This website shows parks around Colorado which can be uploaded, rated and commented on by users."        },
+        {
+            "title": "A-mazing",
+            "role": "Developer",
+            "description": "Built using React. This project is a maze game with a randomly generated maze through whicht he user can navigate through. This project won the \"Best UI/UX\" award at HackCU 2023",
+            "link": "https://github.com/Larjun/amazing"
+        },
+        {
+            "title": "Advanced Spotify Search",
+            "description": "Built using React and NodeJS. This webapp creates custom Spotify playlists based on track metadata such as \"Energy\", \"Danceability\", \"Accousticness\", etc.",
+            "link": "https://github.com/Larjun/Advanced-Spotify-Search"
+        },
+        {
+            "title": "Free PDF Reader",
+            "description": "Built using Express and NodeJS. This webapp converts PDF documents into audio file using Google Text To Speech.",
+            "link": "https://github.com/Larjun/FreePdfReader"
+        },
+        {
+            "title": "Colorify",
+            "description": "This is a chrome extension that improves the color contrast of every website, allowing users with visual impairment to have better access and readability of websites.",
+            "link": "https://github.com/Larjun/colorify"
+        },
+        {
+            "title": "Dungeon Deweller",
+            "description": "Built using C++. This game is a dungeon crawler game played using the terminal. The player navigates through a dungeon with multiple levels, defeating enemies and reaching the exit.",
+            "link": "https://github.com/Larjun/dungeon-dweller"
+        }
+    ]
+}

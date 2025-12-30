@@ -1,10 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100;200;300&family=Montserrat:wght@100;200;300;400&family=Roboto:wght@300;400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100;200;300&family=Montserrat:wght@100;200;300;400&family=Roboto:wght@300;400;500&display=swap");
 @font-face {
   font-family: "Raster";
-  src: local("Raster"),
-  url("fonts/raster.ttf") format("truetype");
+  src: local("Raster"), url("fonts/raster.ttf") format("truetype");
 }
-
 
 @keyframes App-logo-spin {
   from {
@@ -16,16 +14,16 @@
 }
 
 html {
-	scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-	html {
-		scroll-behavior: auto;
-	}
+  html {
+    scroll-behavior: auto;
+  }
 }
 
-.App{
+.App {
   display: grid;
 }
 
@@ -89,7 +87,6 @@ p {
   padding-bottom: 250px;
   margin-top: 0;
 }
-
 
 #namePanel {
   /*background-color: #e5e5f7;
@@ -183,9 +180,10 @@ header {
   height: 80px;
   padding: 5px 1rem;
   background-color: #00ffc4;
-  color: #171717; 
+  color: #171717;
   position: sticky;
   top: 0;
+  z-index: 99;
 }
 
 nav {
@@ -193,7 +191,7 @@ nav {
   text-align: center;
 }
 
-nav a  {
+nav a {
   margin: 0 2rem;
   color: #171717;
   text-decoration: none;
@@ -234,13 +232,11 @@ header .nav-btn {
     gap: 1.5rem;
     background-color: #00ffc4;
     transition: 1s;
-    
   }
 
   header .responsive_nav {
-    transform: translateY(-100vh);;
+    transform: translateY(-100vh);
   }
-
 }
 
 @media screen and (max-width: 1000px) {
@@ -255,7 +251,7 @@ header {
 }
 
 #tsparticles {
-  position:fixed;
+  position: fixed;
   width: 100%;
   z-index: -1;
   background-color: #000;
